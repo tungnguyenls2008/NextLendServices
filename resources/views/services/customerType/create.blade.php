@@ -93,11 +93,14 @@
                                                                                                       name="biz_permit_upload1">
                                 </td>
                             </tr>
+                            <tr id="addButton_tr">
+                                <td colspan="3"><a type='button' id='addButton' style="width: -webkit-fill-available"
+                                       class=" btn btn-primary"><i class="fa fa-plus" aria-hidden="true"></i></a></td>
+                            </tr>
                         </table>
 
                     </div>
-                    <a type='button' id='addButton' style="width: auto"
-                       class=" btn btn-primary"><i class="fa fa-plus" aria-hidden="true"></i></a>
+
                 </div>
                 <input type='button' value='Create' id='getButtonValue' style="width: auto" class=" btn btn-success">
             </div>
@@ -198,6 +201,7 @@
                     '</td>\n';
 
                 $(common_part).hide().appendTo("#customer_type_table").fadeIn(1000);
+                $('#addButton_tr').hide().appendTo("#customer_type_table").fadeIn(1000);
 
                 counter++;
             });
